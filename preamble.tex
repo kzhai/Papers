@@ -1,0 +1,109 @@
+%\usepackage{algorithm}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{amsthm}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{color}
+\usepackage{comment}
+\usepackage{enumerate}
+%\usepackage{enumitem}  % conflict with beamer template
+\usepackage{environ}
+\usepackage{epsfig}
+\usepackage{exscale}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{framed}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{mathtools}
+\usepackage{mdwlist}
+\usepackage{microtype}
+\usepackage{multirow}
+\usepackage{multicol}
+%\usepackage{natbib}
+\usepackage[abs]{overpic}
+\usepackage{pict2e}
+\usepackage{rotating}
+\usepackage{subfigure}
+%\usepackage{tablefootnote}
+\usepackage{tabularx}
+\usepackage{url}
+
+% Do not put either of these (subfigure or subfloat) into the preamble
+% - they clash.  Use them in the final LaTeX document
+% Do not use times in the preamble!  It just causes problems.  If you
+% want it, put it in your own document.
+%\usepackage{times}
+
+%\usepackage{ulem}
+
+%comment out the following line, as it conflicts with aistats2012.sty
+%\usepackage[font=small,labelfont=bf,tableposition=top]{caption}
+
+\newcommand{\breakalign}{\right. \nonumber \\ & \left. \hspace{2cm}}
+
+\newcommand{\gem}[1]{\mbox{\textsc{gem}}}
+\newcommand{\abr}[1]{\textbf{\textsf{#1}}}
+\newcommand{\camelabr}[2]{{\scriptsize #1}{\textsc{#2}}}
+\newcommand{\grammar}[1]{{\color{red} #1}}
+\newcommand{\explain}[2]{\underbrace{#2}_{\mbox{\footnotesize{#1}}}}
+\newcommand{\dir}[1]{\mbox{Dir}(#1)}
+\newcommand{\bet}[1]{\mbox{Beta}(#1)}
+\newcommand{\py}[1]{\mbox{\textsc{py}}(#1)}
+\newcommand{\td}[2]{\mbox{\textsc{TreeDist}}_{#1} \left( #2 \right)}
+\newcommand{\yield}[1]{\mbox{\textsc{Yield}} \left( #1 \right)}
+\newcommand{\mult}[1]{\mbox{Mult}( #1)}
+\newcommand{\wn}{\textsc{WordNet}}
+\newcommand{\g}{\, | \,}
+\newcommand{\G}[1]{\Gamma \left( \textstyle #1 \right)}
+\newcommand{\LG}[1]{\log \Gamma \left( \textstyle #1 \right)}
+\newcommand{\Pois}[1]{\mbox{Poisson}(#1)}
+\newcommand{\pcfg}[3]{#1_{#2 \rightarrow #3}}
+\newcommand{\grule}[2]{#1 \rightarrow #2}
+
+\newcommand{\digambig}[1]{\Psi \left( #1 \right) }
+\newcommand{\digam}[1]{\Psi \left( \textstyle #1 \right) }
+\newcommand{\ddigam}[1]{\Psi' \left( \textstyle #1 \right) }
+
+\newcommand{\e}[2]{\mathbb{E}_{#1}\left[ #2 \right] }
+\newcommand{\h}[2]{\mathbb{H}_{#1}\left[ #2 \right] }
+\newcommand{\ind}[1]{\mathbb{I}\left[ #1 \right] }
+\newcommand{\ex}[1]{\mbox{exp}\left\{ #1\right\} }
+\newcommand{\D}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\elbo}{\mathcal{L}}
+
+\newcommand{\hidetext}[1]{}
+\newcommand{\ignore}[1]{}
+
+\ifcomment
+\newcommand{\jbgcomment}[1]{  \colorbox{red}{   \parbox{.8\linewidth}{ JBG: #1}  }}
+\newcommand{\yhcomment}[1]{  \colorbox{green}{  \parbox{.8\linewidth}{ YH:  #1}  }}
+\newcommand{\kzcomment}[1]{  \colorbox{cyan}{  \parbox{.8\linewidth}{ KZ:  #1}  }}
+\newcommand{\halcomment}[1]{  \colorbox{blue}{  \parbox{.8\linewidth}{ Hal:  #1}  }}
+\newcommand{\reviewercomment}[1]{ \colorbox{yellow}{  \parbox{.8\linewidth}{ Reviewer:  #1}  }}
+
+\else
+\newcommand{\jbgcomment}[1]{ }
+\newcommand{\kzcomment}[1]{ }
+\newcommand{\yhcomment}[1]{ }
+\newcommand{\halcomment}[1]{ }
+\newcommand{\reviewercomment}[1]{ }
+\fi
+
+\newcommand{\smallurl}[1]{ \begin{scriptsize}\url{#1}\end{scriptsize}}
+\newenvironment{compactenum}{ \begin{enumerate*} \small }{ \end{enumerate*} }
+
+\NewEnviron{smalign}{
+\vspace{-.6cm}
+\begin{small}
+\begin{align}
+  \BODY
+\end{align}
+\end{small}
+\vspace{-.6cm}
+}
+
+\definecolor{grey}{rgb}{0.95,0.95,0.95}
