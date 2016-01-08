@@ -1,5 +1,7 @@
 #!/bin/bash
 
+make clean
+
 PAPER_INDEX=$1
 
 pdflatex $PAPER_INDEX/main
