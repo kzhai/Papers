@@ -1,6 +1,8 @@
 #!/bin/bash
 
-make clean
+rm *.aux *.log *.bbl *~ *.out *.blg *.toc *.nav *.snm
+rm main.pdf
+rm main.dvi
 
 PAPER_INDEX=$1
 
