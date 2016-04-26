@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Papers
 ======
 
@@ -46,6 +45,3 @@ For instance, to compile the above paper, simply run
 	./make_paper.sh 2013_infvoc
 
 and you will see a main.pdf in directory ```$WORKSPACE/Papers```.
-=======
-# Papers
->>>>>>> aa7341e3430ae973fd461240e665178dd2b688d7
