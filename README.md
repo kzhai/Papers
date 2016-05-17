@@ -23,7 +23,7 @@ Checkout a *paper* repo **from** the *common* repo as
 
 where ```<REMOTE>``` is a paper repo remote.
 For instance, if the ```<REMOTE>``` is
-```git@git.corp.yahoo.com:kzhai/2013_infvoc.git```, and you will see a
+```https://github.com/kzhai/2013_infvoc.git```, and you will see a
 directory as
 
 	$WORKSPACE/Papers/2013_infvoc
