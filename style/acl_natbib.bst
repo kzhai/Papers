@@ -1,3 +1,13 @@
+%% Output of docstrip was hand-edited to handle create doi links.
+%% This file creates bib entries with \href commands in the title.
+%% You must use the hyperref package, or define \href to do nothing.
+%% Dan Gildea (gildea) 2016/10/30
+%%
+%% Modified further by Min-Yen Kan (knmnyn) on 2016/12/06 to add
+%% visible DOIs that are also hyperref'ed, and use the newer
+%% https://doi.org/ syntax.
+%% Modified further by Min-Yen Kan (knmnyn) to use the URL field for
+%% reference when no DOI is present.
 %%
 %% This is file `acl.bst',
 %% generated with the docstrip utility.
@@ -56,6 +66,7 @@ ENTRY
     author
     booktitle
     chapter
+    doi
     edition
     editor
     howpublished
@@ -72,6 +83,7 @@ ENTRY
     series
     title
     type
+    url
     volume
     year
   }
@@ -495,10 +507,46 @@ FUNCTION {format.note}
   if$
 }
 
+FUNCTION {doilink}
+{ duplicate$ empty$
+{ pop$ "" }
+{ doi empty$
+    { url empty$ 
+        { skip$ }
+        { "\href{" url * "}{" * swap$ * "}" * }
+    if$
+    }
+    { "\href{https://doi.org/" doi * "}{" * swap$ * "}" * }
+  if$
+}
+if$
+}
+
+FUNCTION {format.doi}
+{ doi empty$
+    { "" }
+    { "https://doi.org/" doi * doilink }
+  if$
+  "doi" bibinfo.check
+}
+
+FUNCTION {format.url}
+{ doi empty$
+  { 
+  url
+  duplicate$ empty$ 'skip$
+    { doilink }
+  if$
+  "url" bibinfo.check
+  }
+  { "" }
+  if$
+}
+
 FUNCTION {format.title}
 { title
   duplicate$ empty$ 'skip$
-    { "t" change.case$ }
+    { "t" change.case$ doilink }
   if$
   "title" bibinfo.check
 }
@@ -920,6 +968,9 @@ FUNCTION {article}
   if$
   new.block
   format.note output
+  new.block
+  format.doi output
+  format.url output
   fin.entry
 }
 FUNCTION {book}
@@ -953,6 +1004,9 @@ FUNCTION {book}
   format.edition output
   new.block
   format.note output
+  new.block
+  format.doi output
+  format.url output
   fin.entry
 }
 FUNCTION {booklet}
@@ -967,6 +1021,9 @@ FUNCTION {booklet}
   address "address" bibinfo.check output
   new.block
   format.note output
+  new.block
+  format.doi output
+  format.url output
   fin.entry
 }
 
@@ -1004,6 +1061,9 @@ FUNCTION {inbook}
   format.edition output
   new.block
   format.note output
+  new.block
+  format.doi output
+  format.url output
   fin.entry
 }
 
@@ -1030,6 +1090,9 @@ FUNCTION {incollection}
   if$
   new.block
   format.note output
+  new.block
+  format.doi output
+  format.url output
   fin.entry
 }
 FUNCTION {inproceedings}
@@ -1059,6 +1122,9 @@ FUNCTION {inproceedings}
   if$
   new.block
   format.note output
+  new.block
+  format.doi output
+  format.url output
   fin.entry
 }
 FUNCTION {conference} { inproceedings }
@@ -1075,6 +1141,9 @@ FUNCTION {manual}
   format.edition output
   new.block
   format.note output
+  new.block
+  format.doi output
+  format.url output
   fin.entry
 }
 
@@ -1092,6 +1161,9 @@ FUNCTION {mastersthesis}
   address "address" bibinfo.check output
   new.block
   format.note output
+  new.block
+  format.doi output
+  format.url output
   fin.entry
 }
 
@@ -1106,6 +1178,9 @@ FUNCTION {misc}
   howpublished "howpublished" bibinfo.check output
   new.block
   format.note output
+  new.block
+  format.doi output
+  format.url output
   fin.entry
 }
 FUNCTION {phdthesis}
@@ -1122,6 +1197,9 @@ FUNCTION {phdthesis}
   address "address" bibinfo.check output
   new.block
   format.note output
+  new.block
+  format.doi output
+  format.url output
   fin.entry
 }
 
@@ -1143,6 +1221,9 @@ FUNCTION {proceedings}
   if$
   new.block
   format.note output
+  new.block
+  format.doi output
+  format.url output
   fin.entry
 }
 
@@ -1160,6 +1241,9 @@ FUNCTION {techreport}
   address "address" bibinfo.check output
   new.block
   format.note output
+  new.block
+  format.doi output
+  format.url output
   fin.entry
 }
 
@@ -1172,6 +1256,9 @@ FUNCTION {unpublished}
   format.title "title" output.check
   new.block
   format.note "note" output.check
+  new.block
+  format.doi output
+  format.url output
   fin.entry
 }
 
