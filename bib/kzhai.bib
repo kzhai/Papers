@@ -1,3 +1,12 @@
+@inproceedings{Abadi:2016:a,
+title = {TensorFlow: A system for large-scale machine learning},
+author  = {Martin Abadi and Paul Barham and Jianmin Chen and Zhifeng Chen and Andy Davis and Jeffrey Dean and Matthieu Devin and Sanjay Ghemawat and Geoffrey Irving and Michael Isard and Manjunath Kudlur and Josh Levenberg and Rajat Monga and Sherry Moore and Derek G. Murray and Benoit Steiner and Paul Tucker and Vijay Vasudevan and Pete Warden and Martin Wicke and Yuan Yu and Xiaoqiang Zheng},
+year  = {2016},
+URL = {https://www.usenix.org/system/files/conference/osdi16/osdi16-abadi.pdf},
+booktitle = {12th USENIX Symposium on Operating Systems Design and Implementation (OSDI 16)},
+pages = {265--283}
+}
+
 @book{Abney:1992:a,
  title={Parsing by chunks},
  author={Abney, Steven P},
@@ -226,6 +235,17 @@
   publisher={IEEE}
 }
 
+@article{Chen:2015:b,
+  author = {Chen, Tianqi and Li, Mu and Li, Yutian and Lin, Min and Wang, Naiyan and Wang, Minjie and Xiao, Tianjun and Xu, Bing and Zhang, Chiyuan and Zhang, Zheng},
+  ee = {http://arxiv.org/abs/1512.01274},
+  journal = {CoRR},
+  keywords = {dblp},
+  title = {MXNet: A Flexible and Efficient Machine Learning Library for Heterogeneous Distributed Systems.},
+  url = {http://dblp.uni-trier.de/db/journals/corr/corr1512.html#ChenLLLWWXXZZ15},
+  volume = {abs/1512.01274},
+  year = 2015
+}
+
 @inproceedings{Cohen:2010:a,
  Author = {Shay B. Cohen and David M. Blei and Noah A. Smith},
  Booktitle = naacl,
@@ -322,6 +342,39 @@
  Year = {1973}
 }
 
+@InProceedings{Gal:2016:a,
+  title = 	 {Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning},
+  author = 	 {Yarin Gal and Zoubin Ghahramani},
+  booktitle = 	 {Proceedings of The 33rd International Conference on Machine Learning},
+  pages = 	 {1050--1059},
+  year = 	 {2016},
+  editor = 	 {Maria Florina Balcan and Kilian Q. Weinberger},
+  volume = 	 {48},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {New York, New York, USA},
+  month = 	 {20--22 Jun},
+  publisher = 	 {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v48/gal16.pdf},
+  url = 	 {http://proceedings.mlr.press/v48/gal16.html},
+  abstract = 	 {Deep learning tools have gained tremendous attention in applied machine learning. However such tools for regression and classification do not capture model uncertainty. In comparison, Bayesian models offer a mathematically grounded framework to reason about model uncertainty, but usually come with a prohibitive computational cost. In this paper we develop a new theoretical framework casting dropout training in deep neural networks (NNs) as approximate Bayesian inference in deep Gaussian processes. A direct result of this theory gives us tools to model uncertainty with dropout NNs – extracting information from existing models that has been thrown away so far. This mitigates the problem of representing uncertainty in deep learning without sacrificing either computational complexity or test accuracy. We perform an extensive study of the properties of dropout’s uncertainty. Various network architectures and non-linearities are assessed on tasks of regression and classification, using MNIST as an example. We show a considerable improvement in predictive log-likelihood and RMSE compared to existing state-of-the-art methods, and finish by using dropout’s uncertainty in deep reinforcement learning.}
+}
+
+@Article{Gao:2016:a,
+author="Gao, Wei and Zhou, Zhi-Hua",
+title="Dropout Rademacher complexity of deep neural networks",
+journal="Science China Information Sciences",
+year="2016",
+month="Jun",
+day="16",
+volume="59",
+number="7",
+pages="072104",
+abstract="Great successes of deep neural networks have been witnessed in various real applications. Many algorithmic and implementation techniques have been developed; however, theoretical understanding of many aspects of deep neural networks is far from clear. A particular interesting issue is the usefulness of dropout, which was motivated from the intuition of preventing complex co-adaptation of feature detectors. In this paper, we study the Rademacher complexity of different types of dropouts, and our theoretical results disclose that for shallow neural networks (with one or none hidden layer) dropout is able to reduce the Rademacher complexity in polynomial, whereas for deep neural networks it can amazingly lead to an exponential reduction.",
+issn="1869-1919",
+doi="10.1007/s11432-015-5470-z",
+url="https://doi.org/10.1007/s11432-015-5470-z"
+}
+
 @article{Gattani:2013:a,
   title={Entity extraction, linking, classification, and tagging for social media: a wikipedia-based approach},
   author={Gattani, Abhishek and Lamba, Digvijay S and Garera, Nikesh and Tiwari, Mitul and Chai, Xiaoyong and Das, Sanjib and Subramaniam, Sri and Rajaraman, Anand and Harinarayan, Venky and Doan, AnHai},
@@ -377,7 +430,30 @@
  publisher = {ACM},
  address = {New York, NY, USA},
  keywords = {named entity recognition, topic model},
-} 
+}
+
+@inproceedings{Guo:2016:a,
+  title={Dynamic network surgery for efficient dnns},
+  author={Guo, Yiwen and Yao, Anbang and Chen, Yurong},
+  booktitle={Advances In Neural Information Processing Systems},
+  pages={1379--1387},
+  year={2016}
+}
+
+@inproceedings{Han:2015:a,
+  title={Learning both weights and connections for efficient neural network},
+  author={Han, Song and Pool, Jeff and Tran, John and Dally, William},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={1135--1143},
+  year={2015}
+}
+
+@article{Han:2015:b,
+  title={Deep compression: Compressing deep neural networks with pruning, trained quantization and huffman coding},
+  author={Han, Song and Mao, Huizi and Dally, William J},
+  journal={arXiv preprint arXiv:1510.00149},
+  year={2015}
+}
 
 @article{Higham:1988:a,
   title={Computing a nearest symmetric positive semidefinite matrix},
@@ -442,6 +518,13 @@
  year = {2014},
 }
 
+@article{Iandola:2016:a,
+  title={SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and< 0.5 MB model size},
+  author={Iandola, Forrest N and Han, Song and Moskewicz, Matthew W and Ashraf, Khalid and Dally, William J and Keutzer, Kurt},
+  journal={arXiv preprint arXiv:1602.07360},
+  year={2016}
+}
+
 @inproceedings{Inouye:2014:a,
   title={Admixture of Poisson MRFs: A topic model with word dependencies},
   author={Inouye, David and Ravikumar, Pradeep and Dhillon, Inderjit},
@@ -482,6 +565,13 @@
  publisher = {ACM},
  address = {New York, NY, USA},
  keywords = {data mining, entity extraction, query logs},
+}
+
+@article{Jia:2014:a,
+  Author = {Jia, Yangqing and Shelhamer, Evan and Donahue, Jeff and Karayev, Sergey and Long, Jonathan and Girshick, Ross and Guadarrama, Sergio and Darrell, Trevor},
+  Journal = {arXiv preprint arXiv:1408.5093},
+  Title = {Caffe: Convolutional Architecture for Fast Feature Embedding},
+  Year = {2014}
 }
 
 @inproceedings{Johnson:2006:a,
@@ -549,6 +639,16 @@
  publisher={Springer}
 }
 
+@incollection{Kingma:2015:a,
+title = {Variational Dropout and the Local Reparameterization Trick},
+author = {Kingma, Diederik P and Salimans, Tim and Welling, Max},
+booktitle = nips,
+editor = {C. Cortes and N. D. Lawrence and D. D. Lee and M. Sugiyama and R. Garnett},
+pages = {2575--2583},
+year = {2015},
+publisher = {Curran Associates, Inc.},
+}
+
 @inproceedings{Koeling:2000:a,
  title={Chunking with maximum entropy models},
  author={Koeling, Rob},
@@ -566,12 +666,31 @@
 %  pages={1097--1105}, 
 }
 
+@inproceedings{Krogh:1995:a,
+  title={A simple weight decay can improve generalization},
+  author={Krogh, Anders and Hertz, John A.},
+  booktitle=nips,
+  year={1995},
+  pages={950--957},  
+}
+
 @inproceedings{Lafferty:2001:a,
  title={Conditional random fields: probabilistic models for segmenting and labeling sequence data},
  author={Lafferty, John and McCallum, Andrew and Pereira, Fernando CN},
  booktitle=icml,
  year={2001},
-% organization={Morgan Kaufmann}
+ organization={Morgan Kaufmann}
+}
+
+@incollection{Li:2016:a,
+title = {Improved Dropout for Shallow and Deep Learning},
+author = {Li, Zhe and Gong, Boqing and Yang, Tianbao},
+booktitle = {Advances in Neural Information Processing Systems 29},
+editor = {D. D. Lee and M. Sugiyama and U. V. Luxburg and I. Guyon and R. Garnett},
+pages = {2523--2531},
+year = {2016},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.nips.cc/paper/6561-improved-dropout-for-shallow-and-deep-learning.pdf}
 }
 
 @inproceedings{Li:2006:a,
@@ -579,7 +698,7 @@
  title = {Pachinko allocation: DAG-structured mixture models of topic correlations},
  booktitle = icml,
  year = {2006},
-% pages = {577--584}
+ pages = {577--584}
 }
 
 @inproceedings{Li:2009:a,
@@ -587,7 +706,7 @@
   author={Li, Xiao and Wang, Ye-Yi and Acero, Alex},
   booktitle=sigir,
   year={2009},
-  % pages={572--579},
+  pages={572--579},
   organization={ACM}
 }
 
@@ -596,8 +715,22 @@
   author={Liu, Bing and Grossman, Robert and Zhai, Yanhong},
   booktitle=kdd,
   year={2003},
-%  pages={601--606},
+  pages={601--606},
   organization={ACM}
+}
+
+@article{Louizos:2017:a,
+  title={Bayesian Compression for Deep Learning},
+  author={Louizos, Christos and Ullrich, Karen and Welling, Max},
+  journal={arXiv preprint arXiv:1705.08665},
+  year={2017}
+}
+
+@article{Maeda:2014:a,
+  title={A bayesian encourages dropout},
+  author={Maeda, Shin-ichi},
+  journal={arXiv preprint arXiv:1412.7003},
+  year={2014}
 }
 
 @book{Manning:1999:a,
@@ -617,6 +750,22 @@
   publisher={Cambridge university press Cambridge}
 }
 
+@inproceedings{Maas:2011:a,
+ author = {Maas, Andrew L. and Daly, Raymond E. and Pham, Peter T. and Huang, Dan and Ng, Andrew Y. and Potts, Christopher},
+ title = {Learning Word Vectors for Sentiment Analysis},
+ booktitle = acl,
+ series = {HLT '11},
+ year = {2011},
+ isbn = {978-1-932432-87-9},
+ location = {Portland, Oregon},
+ pages = {142--150},
+ numpages = {9},
+ url = {http://dl.acm.org/citation.cfm?id=2002472.2002491},
+ acmid = {2002491},
+ publisher = {Association for Computational Linguistics},
+ address = {Stroudsburg, PA, USA},
+} 
+
 @inproceedings{Martens:2010:a,
  author =    {James Martens},
  title =     {Deep learning via Hessian-free optimization},
@@ -625,7 +774,7 @@
  editor =    {Johannes F{\"u}rnkranz and Thorsten Joachims},
  address =   {Haifa, Israel},
  month =     {June},
- % pages =     {735--742},
+ pages =     {735--742},
  publisher = {Omnipress}
 }
 
@@ -709,12 +858,18 @@
  address = {New York, NY, USA},
 }
 
-@inproceedings{Krogh:1995:a,
-  title={A simple weight decay can improve generalization},
-  author={Krogh, Anders and Hertz, John A.},
-  booktitle=nips,
-  year={1995},
-  pages={950--957},  
+@InProceedings{Molchanov:2017:a,
+  title =   {Variational Dropout Sparsifies Deep Neural Networks},
+  author =   {Dmitry Molchanov and Arsenii Ashukha and Dmitry Vetrov},
+  booktitle =   {Proceedings of the 34th International Conference on Machine Learning},
+  pages =   {2498--2507},
+  year =   {2017},
+  editor =   {Doina Precup and Yee Whye Teh},
+  volume =   {70},
+  series =   {Proceedings of Machine Learning Research},
+  address =   {International Convention Centre, Sydney, Australia},
+  month =   {06--11 Aug},
+  publisher =   {PMLR}
 }
 
 @article{Nadeau:2007:a,
@@ -734,6 +889,18 @@
   year={2007},
   publisher={University of Ottawa}
 }
+
+@inproceedings{Nair:2010:a, 
+    Publisher = {Omnipress},
+    Title = {Rectified Linear Units Improve Restricted Boltzmann Machines}, 
+    Url = {http://www.icml2010.org/papers/432.pdf}, 
+    Booktitle = icml, 
+    Author = {Vinod Nair and Geoffrey E. Hinton}, 
+    Editor = {Johannes Fürnkranz and Thorsten Joachims}, 
+    Year = {2010}, 
+    Pages = {807-814} 
+}
+
 
 @inproceedings{Nebhi:2013:a,
   title={Named entity disambiguation using freebase and syntactic parsing},
@@ -1026,6 +1193,29 @@ language={English}
  organization=acl
 }
 
+@book{Shalev-Shwartz:2014:a,
+ author = {Shalev-Shwartz, Shai and Ben-David, Shai},
+ title = {Understanding Machine Learning: From Theory to Algorithms},
+ year = {2014},
+ isbn = {1107057132, 9781107057135},
+ publisher = {Cambridge University Press},
+ address = {New York, NY, USA}
+} 
+
+@inproceedings{Simard:2003:a,
+ author = {Simard, Patrice Y. and Steinkraus, Dave and Platt, John C.},
+ title = {Best Practices for Convolutional Neural Networks Applied to Visual Document Analysis},
+ booktitle = {Proceedings of the Seventh International Conference on Document Analysis and Recognition - Volume 2},
+ series = {ICDAR '03},
+ year = {2003},
+ isbn = {0-7695-1960-1},
+ pages = {958--},
+ url = {http://dl.acm.org/citation.cfm?id=938980.939477},
+ acmid = {939477},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+} 
+
 @incollection{Singh:2008:a,
  title={A unified view of matrix factorization models},
  author={Singh, Ajit P and Gordon, Geoffrey J},
@@ -1033,6 +1223,34 @@ language={English}
  year={2008},
 % pages={358--373},
  publisher={Springer}
+}
+
+@InProceedings{Sutskever:2013:a,
+  title = 	 {On the importance of initialization and momentum in deep learning},
+  author = 	 {Ilya Sutskever and James Martens and George Dahl and Geoffrey Hinton},
+  booktitle = icml,
+  pages = 	 {1139--1147},
+  year = 	 {2013},
+  editor = 	 {Sanjoy Dasgupta and David McAllester},
+  volume = 	 {28},
+  number =       {3},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Atlanta, Georgia, USA},
+  month = 	 {17--19 Jun},
+}
+
+@article{Srinivas:2015:a,
+  title={Learning Neural Network Architectures using Backpropagation},
+  author={Srinivas, Suraj and Babu, R Venkatesh},
+  journal={arXiv preprint arXiv:1511.05497},
+  year={2015}
+}
+
+@article{Srinivas:2016:a,
+  title={Generalized dropout},
+  author={Srinivas, Suraj and Babu, R Venkatesh},
+  journal={arXiv preprint arXiv:1611.06791},
+  year={2016}
 }
 
 @article{Srivastava:2014:a,
@@ -1060,6 +1278,15 @@ language={English}
   Year = {2009}
 }
 
+@article{Tibshirani:1996:a,
+  added-at = {2009-04-04T18:01:35.000+0200},
+  author = {Tibshirani, R.},
+  journal = {Journal of the Royal Statistical Society (Series B)},
+  title = {Regression Shrinkage and Selection via the Lasso},
+  volume = 58,
+  year = 1996
+}
+
 @article{Tibshirani:2002:a,
   title={Diagnosis of multiple cancer types by shrunken centroids of gene expression},
   author={Tibshirani, Robert and Hastie, Trevor and Narasimhan, Balasubramanian and Chu, Gilbert},
@@ -1069,6 +1296,16 @@ language={English}
   year={2002},
 %  pages={6567--6572},
   publisher={National Acad Sciences}
+}
+
+@article{Tipping:2001:a,
+  title={Sparse Bayesian learning and the relevance vector machine},
+  author={Tipping, Michael E},
+  journal={Journal of machine learning research},
+  volume={1},
+  number={Jun},
+  pages={211--244},
+  year={2001}
 }
 
 @incollection{Tokunaga:2005:a,
@@ -1085,6 +1322,13 @@ language={English}
   author={Tomczak, Jakub M},
   journal={arXiv preprint arXiv:1308.6324},
   year={2013}
+}
+
+@article{Ullrich:2017:a,
+  title={Soft weight-sharing for neural network compression},
+  author={Ullrich, Karen and Meeds, Edward and Welling, Max},
+  journal={arXiv preprint arXiv:1702.04008},
+  year={2017}
 }
 
 @book{Wade:2001:a,
@@ -1138,6 +1382,14 @@ language={English}
   booktitle={Proceedings of the 30th International Conference on Machine Learning},
   year={2013},
 %  pages={118--126},
+}
+
+@inproceedings{Wen:2016:a,
+  title={Learning structured sparsity in deep neural networks},
+  author={Wen, Wei and Wu, Chunpeng and Wang, Yandan and Chen, Yiran and Li, Hai},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={2074--2082},
+  year={2016}
 }
 
 @inproceedings{Wong:2008:a,
@@ -1263,4 +1515,67 @@ Title = {Efficient Methods for Incorporating Knowledge into Topic Models},
   title = {Adaptive Dropout Rates for Learning with Corrupted Features.},
   year = 2015,
 %  pages = {4126-4133},
+}
+
+@misc{supplemenet,
+  title = {Please see supplementary material}
+}
+
+
+
+
+
+
+
+
+@article{Theano:2016:a,
+   author = {{Theano Development Team}},
+    title = "{Theano: A {Python} framework for fast computation of mathematical expressions}",
+  journal = {arXiv e-prints},
+   volume = {abs/1605.02688},
+ primaryClass = "cs.SC",
+ keywords = {Computer Science - Symbolic Computation, Computer Science - Learning, Computer Science - Mathematical Software},
+     year = 2016,
+    month = may,
+      url = {http://arxiv.org/abs/1605.02688},
+}
+
+@article{Pytorch:16:a,
+    title = "Pytorch",
+    year = 2016,
+    url = {https://github.com/pytorch},
+}
+
+@inproceedings{CNTK:2016:a,
+ author = {Seide, Frank and Agarwal, Amit},
+ title = {CNTK: Microsoft's Open-Source Deep-Learning Toolkit},
+ booktitle = {Proceedings of the 22Nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+ series = {KDD '16},
+ year = {2016},
+ location = {San Francisco, California, USA},
+ pages = {2135--2135},
+ url = {http://doi.acm.org/10.1145/2939672.2945397},
+} 
+
+
+
+@book{hastie:09:a,
+  author = {Hastie, Trevor and Tibshirani, Robert and Friedman, Jerome},
+  edition = 2,
+  keywords = {inference mathmatics dataanalysis method clutering statistics},
+  publisher = {Springer},
+  title = {The elements of statistical learning: data mining, inference and prediction},
+  url = {http://www-stat.stanford.edu/~tibs/ElemStatLearn/},
+  year = 2009
+}
+
+
+
+@article{Mcallester:13:a,
+  author    = {David A. McAllester},
+  title     = {A PAC-Bayesian Tutorial with {A} Dropout Bound},
+  journal   = {CoRR},
+  volume    = {abs/1307.2118},
+  year      = {2013},
+  url       = {http://arxiv.org/abs/1307.2118},
 }

@@ -2,7 +2,7 @@
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{amssymb}
-%\usepackage{amsthm}
+\usepackage{amsthm}
 \usepackage{bbm}
 \usepackage{bm}
 \usepackage{caption}
@@ -14,12 +14,13 @@
 \usepackage{epsfig}
 \usepackage{exscale}
 \usepackage{fancyhdr}
+\usepackage{fancybox}
 \usepackage{float}
 \usepackage{framed}
 \usepackage{graphics}
 \usepackage{graphicx}
 \usepackage{latexsym}
-\usepackage{mathtools}
+%\usepackage{mathtools}
 \usepackage{mdwlist}
 \usepackage{microtype}
 \usepackage{multirow}
@@ -32,6 +33,7 @@
 %\usepackage{tablefootnote}
 \usepackage{tabularx}
 \usepackage{url}
+\usepackage{verbatim}
 
 % Do not put either of these (subfigure or subfloat) into the preamble
 % - they clash.  Use them in the final LaTeX document
@@ -81,17 +83,14 @@
 \newcommand{\ignore}[1]{}
 
 \ifcomment
-\newcommand{\jbgcomment}[1]{  \colorbox{red}{   \parbox{.8\linewidth}{ JBG: #1}  }}
-\newcommand{\yhcomment}[1]{  \colorbox{green}{  \parbox{.8\linewidth}{ YH:  #1}  }}
-\newcommand{\kzcomment}[1]{  \colorbox{cyan}{  \parbox{.8\linewidth}{ KZ:  #1}  }}
-\newcommand{\halcomment}[1]{  \colorbox{blue}{  \parbox{.8\linewidth}{ Hal:  #1}  }}
-\newcommand{\reviewercomment}[1]{ \colorbox{yellow}{  \parbox{.8\linewidth}{ Reviewer:  #1}  }}
-
+\newcommand{\redcomment}[1]{\colorbox{red}{ \parbox{.9\linewidth}{ #1 } } }
+\newcommand{\greencomment}[1]{ \colorbox{green}{ \parbox{.9\linewidth}{ #1 } } }
+\newcommand{\bluecomment}[1]{ \colorbox{blue}{ \parbox{.9\linewidth}{ #1 } } }
+\newcommand{\reviewercomment}[1]{ \colorbox{yellow}{ \parbox{.9\linewidth}{ #1 } } }
 \else
-\newcommand{\jbgcomment}[1]{ }
-\newcommand{\kzcomment}[1]{ }
-\newcommand{\yhcomment}[1]{ }
-\newcommand{\halcomment}[1]{ }
+\newcommand{\redcomment}[1]{ }
+\newcommand{\greencomment}[1]{ }
+\newcommand{\bluecomment}[1]{ }
 \newcommand{\reviewercomment}[1]{ }
 \fi
 
